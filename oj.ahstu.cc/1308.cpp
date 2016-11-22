@@ -6,7 +6,7 @@ int main() {
   float f[21] = {0};
   for (int i = 1; i <= 20; i++) f[i] = 1.0 * a / b, c = a + b, b = a, a = c;
   for (int i = 1; i <= 20; i++) f[i] += f[i - 1];
-  for (int n; cin >> n; printf("%.2f\n", f[n]))
+  for (int n; cin >> n; printf("%.3f\n", f[n]))
     ;
 
   return 0;
