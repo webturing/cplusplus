@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  ifstream cin("D:\\data\\1112\\sample.in");
+
   int m, n;
   string s;
   getline(cin, s);
