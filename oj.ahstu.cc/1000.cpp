@@ -8,20 +8,16 @@ int k, w;
 int m, n, s;
 
 struct highNum {
-
   int num[27];
-
   highNum(int length = 1) {
     memset(num, 0, sizeof(num));
     num[0] = length;
   }
-
   highNum operator=(int b) {
     memset(num, 0, sizeof(num));
     num[0] = 1;
     num[1] = b;
     int ret = num[1] / M, iter = 1;
-    ;
     while (ret != 0) {
       num[iter] %= M;
       num[++iter] += ret;
@@ -30,7 +26,6 @@ struct highNum {
     while (num[num[0] + 1] != 0) ++num[0];
     return *this;
   }
-
   highNum operator+(highNum &b) const {
     highNum c = highNum(max(num[0], b.num[0]));
     for (int i = 1; i <= c.num[0]; ++i) {
