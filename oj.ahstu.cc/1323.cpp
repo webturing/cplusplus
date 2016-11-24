@@ -14,7 +14,7 @@ struct Student {
   }
 };
 int main() {
-  ifstream cin("D:\\data\\1323\\sample.in");
+  // ifstream cin("D:\\data\\1323\\sample.in");
   int n;
   cin >> n;
   vector<Student> v(n);

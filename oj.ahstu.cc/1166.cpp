@@ -1,7 +1,3 @@
-/*
-        Date: Tue Nov 22 2016 13:43:59 GMT+0800 (China Standard Time)
-        Author: cplusplus
-*/
 #include <iostream>
 #include <algorithm>
 #include <vector>
