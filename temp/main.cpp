@@ -1,2 +1,2 @@
-#include<cstdio>
-int main(){puts("6\n30");}
+#include <cstdio>
+int main() { puts("6\n30"); }
