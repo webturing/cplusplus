@@ -8,7 +8,7 @@
 #define SC(x) scanf("%d", &x)
 typedef long long LL;
 using namespace std;
-//#define JUDGE_MOD
+#define JUDGE_MOD
 int main() {
 #ifdef JUDGE_MOD
   freopen("data.in", "r", stdin);
