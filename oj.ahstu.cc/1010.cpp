@@ -1,10 +1,9 @@
 #include <iostream>
+#include <fstream>
+#include <cmath>
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  int n, a, b, c;
-  cin >> n;
-  c = n % 10, b = (n / 10) % 10, a = n / 100;
-  cout << (n == a * a * a + b * b * b + c * c * c) << endl;
+  for (int n; cin >> n;) cout << 1 + (int)(log(n) / log(3)) << endl;
   return 0;
 }

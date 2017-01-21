@@ -1,24 +1,15 @@
 #include <iostream>
-#include <fstream>
-#include <vector>
-#include <algorithm>
 using namespace std;
-const int MAXN = 32676;
-vector<bool> prime(MAXN, true);
-void fill() {
-  prime[0] = prime[1] = false;
-  for (int i = 2; i * i <= MAXN; i++)
-    if (prime[i])
-      for (int j = i * i; j < MAXN; j += i) prime[j] = false;
+int f(int a, int p, int m) {
+  a %= m;
+  if (p == 1 || a == 0) return a % m;
+  if (a == 1) return 1;
+  if (p % 2 == 0) return f(a * a % m, p / 2, m);
+  return (f(a * a % m, p / 2, m) * a) % m;
 }
 int main() {
-  ifstream cin("d:\\data\\1090\\sample.in");
-  fill();
-  for (int n; cin >> n;) {
-    int count = 0;
-    for (int p = 3; p <= n / 2; p += 2)
-      if (prime[p] && prime[n - p]) ++count;
-    cout << count << endl;
-  }
+
+  for (int a, b, c; cin >> a >> b >> c, a + b + c; cout << f(a, b, c) << endl)
+    ;
   return 0;
 }

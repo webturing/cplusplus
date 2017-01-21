@@ -13,8 +13,6 @@ long long cnr(int n, int r) {
   return Q[n][r] = cnr(n - 1, r - 1) + cnr(n - 1, r);
 }
 int main() {
-  ifstream cin("d:\\data\\1077\\test0.in");
-  ofstream cout("d:\\data\\1077\\test0.out");
   for (int n; cin >> n;) {
     for (int i = n - 1; i >= 0; i--) {
       for (int j = 0; j < n - i - 1; j++) cout << ' ';
