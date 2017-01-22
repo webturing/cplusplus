@@ -13,7 +13,7 @@ int main() {
     set<int>::iterator it = s.begin();
     cout << *it;
     for (++it; it != s.end(); ++it) cout << " " << *it;
-    cout << endl;
+    // cout << endl;
   }
   return 0;
 }

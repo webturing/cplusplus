@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+#include <iterator>
+#include <algorithm>
 using namespace std;
 
 int main() {
