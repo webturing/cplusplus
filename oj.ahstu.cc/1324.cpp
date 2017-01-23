@@ -1,17 +1,25 @@
 #include <iostream>
 #include <cstring>
+#include <cstdio>
 using namespace std;
 int f(int n) {
   char s[100];
   sprintf(s, "%d", n);
-  int i, len = strlen(s);
+  int i, j, len = strlen(s);
   int max = 0;
   for (i = 0; i < len; i++) {
+    int temp = 0;
+    for (j = 0; j < len; j++) {
+      if (i == j) continue;
+      temp = temp * 10 + s[j] - '0';
+    }
+    if (temp > max) max = temp;
   }
+  return max;
 }
 int main() {
-
-  for (int n; cin >> n, n; cout << f(n) << endl)
+  int t, n;
+  for (cin >> t; t-- && cin >> n; cout << f(n) << endl)
     ;
   return 0;
 }
