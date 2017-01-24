@@ -4,7 +4,6 @@
 #include <algorithm>
 using namespace std;
 int main(int argc, char const *argv[]) {
-  ifstream cin("d:\\data\\1222\\sample.in");
   int size, inc;
   for (; cin >> size >> inc;) {
     vector<int> v(size);

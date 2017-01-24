@@ -1,7 +1,3 @@
-/*
-        Date: Sun Jan 22 2017 22:15:18 GMT+0800 (China Standard Time)
-        Author: root
-*/
 #include <iostream>
 using namespace std;
 int main() {
