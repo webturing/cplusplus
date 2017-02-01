@@ -3,7 +3,6 @@
 #include <set>
 #include <cmath>
 using namespace std;
-
 int main(int argc, char const *argv[]) {
   for (int k, n; cin >> k >> n; k++) {
     int m = log(n) / log(k) + 5;
