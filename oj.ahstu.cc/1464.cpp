@@ -1,5 +1,4 @@
-#include <iostream>
-#include <bitset>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -10,7 +9,8 @@ int main(int argc, char const *argv[]) {
       // cout << b << endl;
       int j;
       for (j = 0; j < 32; j++)
-        if (b[j]) break;
+        if (b[j])
+          break;
       cout << "Case #" << no + 1 << ": " << (1 << j) << endl;
     }
   return 0;
