@@ -7,6 +7,7 @@ bool flower(int n) {
   int c = n % 10;
   return a * a * a + b * b * b + c * c * c == n;
 }
+
 int main(int argc, char const *argv[]) {
   int n;
   cin >> n;
