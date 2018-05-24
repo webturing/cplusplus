@@ -1,9 +1,15 @@
-#include <iostream>
-#include <fstream>
-#include <cmath>
-using namespace std;
 
-int main(int argc, char const *argv[]) {
-  for (int n; cin >> n;) cout << 1 + (int)(log(n) / log(3)) << endl;
+#include <iostream>
+using namespace std;
+#define CUBE(x) ((x) * (x) * (x))
+int main() {
+  int n;
+  cin >> n;
+  auto flag = (n < 1000 && n >= 100);
+  if (flag) {
+    auto a = n / 100, b = n % 100 / 10, c = n % 10;
+    flag = (n == CUBE(a) + CUBE(b) + CUBE(c));
+  }
+  cout << flag << endl;
   return 0;
 }

@@ -1,9 +1,16 @@
+#include <bits/stdc++.h>
 using namespace std;
-
-int main() {
-  for (int n; cin >> n;) {
-    int a = n / 100, b = (n % 100) / 10, c = n % 10;
-    cout << c * 100 + b * 10 + a << endl;
+int reverse(int n) {
+  int ans = 0;
+  while (n) {
+    ans = ans * 10 + (n % 10);
+    n /= 10;
   }
+  return ans;
+}
+int main(int argc, char const *argv[]) {
+  int n;
+  cin >> n;
+  cout << reverse(n) << endl;
   return 0;
 }

@@ -1,11 +1,16 @@
+
 #include <iostream>
+#include <vector>
+#include <numeric>
 #include <iomanip>
-
 using namespace std;
-
-int main(int argc, char const *argv[]) {
+int main() {
   int m, n;
   cin >> m >> n;
-  cout << n / 15 - m / 15 << endl;
+  auto r = 15;
+  m = (m + r - 1) / r * r;
+  n = n / r * r;
+  cout << (n - m) / r + 1 << endl;
+
   return 0;
 }

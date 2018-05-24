@@ -1,19 +1,21 @@
-using namespace std;
 
+#include <iostream>
+using namespace std;
 int main() {
-  for (int n; cin >> n;) {
-    if (n < 0 || n > 100)
+  for (int score; cin >> score;) {
+    if (score < 0 || score > 100)
       cout << "Score is error!" << endl;
-    else if (n < 60)
+    else if (score < 60)
       cout << "E" << endl;
-    else if (n < 70)
+    else if (score < 70)
       cout << "D" << endl;
-    else if (n < 80)
+    else if (score < 80)
       cout << "C" << endl;
-    else if (n < 90)
+    else if (score < 90)
       cout << "B" << endl;
     else
       cout << "A" << endl;
   }
+
   return 0;
 }

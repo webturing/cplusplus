@@ -1,16 +1,13 @@
+
 #include <iostream>
+#include <vector>
+#include <numeric>
+#include <iomanip>
 using namespace std;
-
-bool find7(int n) {
-  for (; n > 0; n /= 10)
-    if (n % 10 == 7) return true;
-  return false;
-}
-
-int main(int argc, char const *argv[]) {
-  int N;
-  cin >> N;
-  for (int i = 7; i <= N; i++)
-    if (i % 7 == 0 || find7(i)) cout << i << endl;
+int main() {
+  for (string s; cin >> s;) {
+    for (auto p = s.rbegin(); p != s.rend(); ++p) cout << *p;
+    cout << endl;
+  }
   return 0;
 }

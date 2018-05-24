@@ -1,13 +1,14 @@
+
 #include <iostream>
+#include <vector>
+#include <numeric>
 #include <iomanip>
-#include <cmath>
-
 using namespace std;
-
-int main(int argc, char const *argv[]) {
-  for (int n; cin >> n;) {
-    if (n % 2 == 0) n--;
-    cout << (1 + n) * (1 + n) / 4 << endl;
-  }
+int main() {
+  int n;
+  cin >> n;
+  if (n % 2 == 0) --n;
+  n = (n + 1) >> 1;
+  cout << n* n << endl;
   return 0;
 }

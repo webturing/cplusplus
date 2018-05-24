@@ -1,9 +1,13 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-  for (int a, b; cin >> a >> b && (a || b); cout << a + b << endl)
-    ;
+int main(int argc, char const *argv[]) {
+  int n;
+  cin >> n;
+  if (n & 1) {
+    cout << "no" << endl;
+  } else {
+    cout << "yes" << endl;
+  }
   return 0;
 }

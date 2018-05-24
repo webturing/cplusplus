@@ -1,11 +1,13 @@
-#include <iostream>
-using namespace std;
 
-int main(int argc, char const *argv[]) {
-  string s;
-  cin >> s;
-  for (string::const_reverse_iterator it = s.rbegin(); it != s.rend(); ++it)
-    cout << *it;
-  cout << endl;
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <iomanip>
+using namespace std;
+int main() {
+  for (string s; cin >> s;) {
+    for (auto p = s.rbegin(); p != s.rend(); ++p) cout << *p;
+    cout << endl;
+  }
   return 0;
 }

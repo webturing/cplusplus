@@ -1,17 +1,24 @@
-using namespace std;
 
-int main(int argc, char const *argv[]) {
-  vector<bool> prime(1001, true);
-  prime[0] = prime[1] = false;
-  for (int i = 2; i * i < prime.size(); i++)
-    if (prime[i])
-      for (int j = i * i; j < prime.size(); j += i) prime[j] = false;
-  for (int M; cin >> M;)
-    for (int N; M-- && cin >> N;) {
-      int s = 0;
-      for (int t; N-- && cin >> t;)
-        if (prime[t]) s += t;
-      cout << s << endl;
-    }
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+bool prime(int n) {
+  if (n <= 1) return false;
+  for (auto i = 2; i * i <= n; i++)
+    if (n % i == 0) return false;
+  return true;
+}
+int main() {
+  int m, n;
+  for (cin >> m; m-- && cin >> n;) {
+    vector<int> v(n);
+    for (auto& p : v) cin >> p;
+    auto sum = 0;
+    for (auto p : v)
+      if (prime(p)) sum += p;
+    cout << sum << endl;
+  }
+
   return 0;
 }

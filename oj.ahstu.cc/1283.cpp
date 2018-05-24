@@ -1,18 +1,17 @@
+
 #include <iostream>
-#include <iomanip>
+#include <vector>
 #include <algorithm>
-
 using namespace std;
-
-int main(int argc, char const *argv[]) {
-  int a[3];
-  cin >> a[0] >> a[1] >> a[2];
-  sort(a, a + 3);
-  if (a[0] + a[1] <= a[2])
-    cout << "not a triangle\n";
-  else if (a[0] * a[0] + a[1] * a[1] == a[2] * a[2])
-    cout << "yes\n";
+int main() {
+  std::vector<double> v(3);
+  cin >> v[0] >> v[1] >> v[2];
+  sort(v.begin(), v.end());
+  if (v[0] + v[1] <= v[2])
+    cout << "not a triangle" << endl;
+  else if (v[0] * v[0] + v[1] * v[1] == v[2] * v[2])
+    cout << "yes" << endl;
   else
-    cout << "no\n";
+    cout << "no" << endl;
   return 0;
 }

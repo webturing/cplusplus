@@ -1,13 +1,12 @@
+
 #include <iostream>
-#include <cmath>
+#include <vector>
 #include <algorithm>
-
 using namespace std;
-
-int main(int argc, char const *argv[]) {
-  int a[3];
-  cin >> a[0] >> a[1] >> a[2];
-  sort(a, a + 3);
-  cout << a[0] << " " << a[1] << " " << a[2] << endl;
+int main() {
+  std::vector<int> v(3);
+  cin >> v[0] >> v[1] >> v[2];
+  sort(v.begin(), v.end());
+  cout << v[0] << " " << v[1] << " " << v[2] << endl;
   return 0;
 }

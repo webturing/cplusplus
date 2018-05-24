@@ -1,8 +1,14 @@
-using namespace std;
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
+using namespace std;
 int main() {
-  for (float f; cin >> f;)
-    cout << setiosflags(ios::fixed) << setprecision(3) << 5 * (f - 32) / 9
-         << endl;
+  double f;
+  cin >> f;
+  cout << setiosflags(ios::fixed) << setprecision(3) << 5 * (f - 32) / 9
+       << endl;
   return 0;
 }

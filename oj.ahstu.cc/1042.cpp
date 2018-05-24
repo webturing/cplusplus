@@ -1,12 +1,13 @@
 #include <iostream>
+#include <vector>
+#include <numeric>
 #include <iomanip>
-
 using namespace std;
-
-int fact(int n) { return n ? fact(n - 1) * n : 1; }
-
-int main(int argc, char const *argv[]) {
-  for (int N; cin >> N; cout << fact(N) << endl)
-    ;
+int main() {
+  int n;
+  cin >> n;
+  auto s = 1ull;
+  for (int i = 2; i <= n; i++) s *= i;
+  cout << s << endl;
   return 0;
 }

@@ -1,8 +1,12 @@
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-  for (float r, h, pi = atan(1.) * 4; cin >> r >> h;)
-    cout << "Area=" << setiosflags(ios::fixed) << setprecision(3)
-         << 2 * pi * r * (r + h) << endl;
+const double PI = atan(1.0) * 4.0;
+int main(int argc, char const *argv[]) {
+  double r, h;
+  double area;
+  cin >> r >> h;
+  area = 2 * PI * r * r + 2 * PI * r * h;
+  cout << "Area=" << setiosflags(ios::fixed) << setprecision(3) << area << endl;
   return 0;
 }
