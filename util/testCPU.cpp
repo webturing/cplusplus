@@ -7,8 +7,8 @@
 
 int a, b, c, d, e, f;
 
-void bad() {/**brute but fail!暴力枚举执行10000 00000
-               0000次循环体!!!规模应该在好几天*/
+void bad() {/**brute but fail!??????????10000 00000
+               0000???????!!!????????ü???*/
   for (a = 1; a <= N; a++)
     for (b = 1; b <= N; b++)
       for (c = 1; c <= N; c++)
@@ -20,7 +20,7 @@ void bad() {/**brute but fail!暴力枚举执行10000 00000
 }
 
 /////////////////////////////////////////////////
-void step1() {/**ok  using a<=b<=c<=d<=e<f to improve 执行1517381580次循环体*/
+void step1() {/**ok  using a<=b<=c<=d<=e<f to improve ???1517381580???????*/
   puts("Step1:macro");
   for (a = 1; a <= N; a++)
     for (b = a; b <= N; b++)
@@ -35,8 +35,8 @@ void step1() {/**ok  using a<=b<=c<=d<=e<f to improve 执行1517381580次循环体*/
 //////////////////////////////////////////////////////////
 long long hh(int x) { return 1LL * x * x * x * x * x; }
 
-void step2() {/**function version 执行1517381580次循环体
-                 函数版比宏版本稍快有点匪夷所思*/
+void step2() {/**function version ???1517381580???????
+                 ????????汾????е???????*/
   puts("Step2:function version");
   for (a = 1; a <= N; a++)
     for (b = a; b <= N; b++)
@@ -58,7 +58,7 @@ void fill() {
 
 void
 step3() {/**array version
-            执行1517381580次循环体，数组版是一个很大的改进，避免了5次方的反复计算*/
+            ???1517381580??????壬????????????????????????5?η??????????*/
   puts("Step3: array version");
   fill();
   for (a = 1; a <= N; a++)
@@ -82,7 +82,7 @@ int cmp(const void *a, const void *b) {
 }
 
 void step4() {/**array_bsearch1 version
-                 ，结合二分查找，用logN代替一个循环也是一个很大的改进*/
+                 ??????????????logN??????????????????????*/
   puts("Step4:array +bsearch");
   fill();
   for (a = 1; a < N; a++)
@@ -101,7 +101,7 @@ void step4() {/**array_bsearch1 version
 
 /////////////////////////////////////
 void step5() {/**array_bsearch2 version
-                 ，改变了搜索顺序，假定f>a>=b>=c>=d>=e也可以优化很多，有趣*/
+                 ????????????????f>a>=b>=c>=d>=e??????????????*/
   puts("Step5:array +bsearch2");
   fill();
   for (a = 1; a < N; a++)
