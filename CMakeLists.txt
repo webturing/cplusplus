@@ -1,0 +1,1 @@
+add_executable(cplusplus main.cpp)
