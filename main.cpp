@@ -6,8 +6,7 @@ typedef long long LL;
 
 string fmt(const double exp, int scale = 6) {
     ostringstream os;
-    os << setiosflags(ios::fixed) << setprecision(scale)
-    exp;
+    os << setiosflags(ios::fixed) << setprecision(scale) << exp;
     return os.str();
 }
 
