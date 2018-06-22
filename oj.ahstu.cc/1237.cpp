@@ -19,17 +19,11 @@ int main(int argc, char const *argv[]) {
     assert(cin);
     LL start = clock();
 #endif
-    vector<int> v(4);
-    cin >> v[0] >> v[1] >> v[2] >> v[3];
-    sort(v.begin(), v.end(), [](int a, int b) -> bool { return a < b; });
-    //copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));
-    for (int i = 0; i < v.size(); i++) {
-        vector<int> a(v);
-        a.erase(a.begin() + v.size() - 1 - i);
-        do {
-            cout << a[0] << " " << a[1] << " " << a[2] << endl;
-        } while (next_permutation(a.begin(), a.end()));
-
+    int T, n;
+    for (cin >> T; T-- && cin >> n;) {
+        double d = fmod(n * log10(n), 1.0);
+        double t = pow(10, d);
+        cout << (int) t << endl;
     }
 
 #ifdef LOCAL
