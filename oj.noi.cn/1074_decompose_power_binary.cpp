@@ -1,3 +1,7 @@
+//
+// Created by jal on 18-6-25.
+//
+//137 = 2(2(2)+2+2(0))+2(2+2(0))+2(0)
 #include <bits/stdc++.h>
 using namespace std;
 void print(int n){
