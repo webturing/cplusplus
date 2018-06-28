@@ -2,7 +2,7 @@
 
 using namespace std;
 
-typedef long long LL;
+typedef unsigned long long LL;
 
 string fmt(const double exp, int scale = 6) {
     ostringstream os;
@@ -10,7 +10,13 @@ string fmt(const double exp, int scale = 6) {
     return os.str();
 }
 
-#define LOCAL
+LL C(int n) {
+    if (n == 1)
+        return 1;
+    return C(n - 1) * (4 * n - 2) / (n + 1);
+}
+
+//#define LOCAL
 
 int main(int argc, char const *argv[]) {
     ios::sync_with_stdio(false);
@@ -19,18 +25,9 @@ int main(int argc, char const *argv[]) {
     assert(cin);
     LL start = clock();
 #endif
-    vector<int> v(4);
-    cin >> v[0] >> v[1] >> v[2] >> v[3];
-    sort(v.begin(), v.end(), [](int a, int b) -> bool { return a < b; });
-    //copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));
-    for (int i = 0; i < v.size(); i++) {
-        vector<int> a(v);
-        a.erase(a.begin() + v.size() - 1 - i);
-        do {
-            cout << a[0] << " " << a[1] << " " << a[2] << endl;
-        } while (next_permutation(a.begin(), a.end()));
-
-    }
+    int n;
+    cin >> n;
+    cout << C(n) << endl;
 
 #ifdef LOCAL
     LL end = clock();
