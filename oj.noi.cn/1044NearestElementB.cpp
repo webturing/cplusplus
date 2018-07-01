@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main(int argc, char const *argv[]) {
     ifstream cin("input.txt");
     int n;
