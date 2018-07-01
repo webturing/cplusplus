@@ -51,11 +51,11 @@ int main(int argc, char const *argv[]) {
         string type;
         cin >> type;
         if (type == "T") {
-            Triangle *t = new Triangle();
+            Triangle *t = new Triangle;
             cin >> t->side;
             shapes[i] = t;
         } else if (type == "C") {
-            Circle *c = new Circle();
+            Circle *c = new Circle;
             cin >> c->radius;
             shapes[i] = c;
         } else if (type == "R") {
