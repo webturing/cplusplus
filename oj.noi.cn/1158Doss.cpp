@@ -31,21 +31,17 @@ int main() {
     cin >> r >> c;
     Doss doss;
     long long up = doss.up;
-    for (; r;) {
+    for (int i = 0; i < r; i++) {
         up += (c - 1) / 4 * 14;
-        for (int j = 0; j < (c - 1) % 4; j++)doss.moveLeftToRight(), up += doss.up;
-        --r;
-        if (r == 0)break;
-        doss.moveUpToDown();
-        up += doss.up;
-        up += (c - 1) / 4 * 14;
-        for (int j = 0; j < (c - 1) % 4; j++)doss.moveRightToLeft(), up += doss.up;
-        --r;
-        if (r == 0)break;
-        doss.moveUpToDown();
-        up += doss.up;
+        if (i & 1)
+            for (int j = 0; j < (c - 1) % 4; j++)doss.moveRightToLeft(), up += doss.up;
+        else
+            for (int j = 0; j < (c - 1) % 4; j++)doss.moveLeftToRight(), up += doss.up;
+        if (i < r - 1) {
+            doss.moveUpToDown();
+            up += doss.up;
+        }
     }
-
     cout << up << endl;
     return 0;
 }
