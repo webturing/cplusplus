@@ -1,17 +1,24 @@
 #include <bits/stdc++.h>
 
-
 using namespace std;
+#define  LOCAL
 
 int findMaxSubString(string s, string t);
 
 int main() {
+#ifdef LOCAL
     ifstream cin("input.txt");
+    long long start = clock();
+#endif
     for (string s, t; cin >> s >> t;) {
         s += s;
         t += t;
         cout << findMaxSubString(s, t) << endl;
     }
+#ifdef LOCAL
+    long long end = clock();
+    cout << end - start << endl;
+#endif
 }
 
 int findMaxSubString(string s, string t) {
