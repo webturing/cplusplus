@@ -1,13 +1,12 @@
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
+/**
+ * C++ qsort 采用快速排序，非稳定排序
+ * C++ stable_sort采用归并排序 是快速的稳定排序，首选
+ */
 
 int main() {
-    ifstream cin("input.txt");
-    ofstream cout("output.txt");
-
     int n;
     cin >> n;
     string k;

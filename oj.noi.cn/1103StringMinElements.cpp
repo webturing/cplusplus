@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/**
+ * 带比较函数的max_element /min_element的写法
+ * @return
+ */
 int main() {
     int n;
     cin >> n;
