@@ -15,27 +15,33 @@ int main() {
         for (auto &i:v)cin >> i;
         int left = *max_element(v.begin(), v.end());
         int right = accumulate(v.begin(), v.end(), 0);
+        int best = right;
         while (left < right) {
             int mid = (left + right) >> 1;
-            int t = 0;
-            int s = 0;
-            for (int i = 0; i < v.size(); i++) {
-                if (t > m)
-                    break;
+            int t = 1;
+            int s = v[0];
+            for (int i = 1; i < v.size(); i++) {
                 if (s + v[i] > mid) {
                     t++;
                     s = v[i];
+                    //copy(v.begin(),v.begin()+i,ostream_iterator<int>(cerr," "));cerr<<endl;
                 } else {
                     s += v[i];
                 }
+                if (t > m)
+                    break;
             }
             if (t > m) {
                 left = mid + 1;
             } else {
-                right = mid - 1;
+                if (best > mid) {
+                    best = mid;
+                    //cerr << "best=" << best << endl;
+                }
+                right = mid;
             }
         }
-
+        cerr << best << endl;
         int s = 0;
         int gmin = 0xfffff;
         for (int i = 0; i < v.size(); i++) {
