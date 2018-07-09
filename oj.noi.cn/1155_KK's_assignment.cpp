@@ -173,6 +173,14 @@ BigInteger pow(const BigInteger &n, const BigInteger &k) {
     return pow(pow(n, k / 2), 2);
 }
 
+BigInteger pw(const BigInteger &n, int k) {
+    if (k == 0)return 1;
+    if (k == 2)return n * n;
+    if (k % 2)return n * pw(n, k - 1);
+    return pw(pw(n, k / 2), 2);
+}
+
+
 BigInteger gcd(BigInteger n, BigInteger m) {
     BigInteger rem = n % m;
     if (rem == 0)
@@ -181,7 +189,7 @@ BigInteger gcd(BigInteger n, BigInteger m) {
         return gcd(m, rem);
 }
 
-int result[N];
+map<int, int> result;
 
 int main() {
     init();
@@ -222,22 +230,19 @@ int main() {
         cout << 0 << endl;
     } else {
         BigInteger up(1);
-        for (int i = 0; i <= N; i++) {
-            if (result[i] >= 1) {
-                for (int j = 1; j <= result[i]; j++) {
-                    up *= i;
-                }
+        for (auto res:result) {
+            if (res.second > 0) {
+                BigInteger temp(res.first);
+                up *= pw(temp, res.second);
             }
         }
         cout << up << endl;
     }
     BigInteger down(1);
-    for (int i = 0; i <= N; i++) {
-        if (result[i] < 0) {
-            result[i] = -result[i];
-            while (result[i]--) {
-                down *= i;
-            }
+    for (auto res:result) {
+        if (res.second < 0) {
+            BigInteger temp(res.first);
+            down *= pw(temp, -res.second);
         }
     }
     cout << down << endl;
