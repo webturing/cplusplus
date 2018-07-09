@@ -1,27 +1,10 @@
 //
-// Created by ubuntu on 18-7-9.
+// Created by jal on 18-7-8.
 //
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
-const int N = 1001;
-bool f[N];
-vector<int> prime;
-
-void init() {
-    memset(f, true, sizeof(f));
-    f[0] = f[1] = false;
-    for (int i = 2; i < N; i++) {
-        if (f[i]) {
-            prime.push_back(i);
-        }
-        for (int j = 0; j < prime.size() && prime[j] * i < N; j++) {
-            f[i * prime[j]] = false;
-        }
-    }
-    //copy(prime.begin(), prime.end(), ostream_iterator<int>(cout, " "));cout << endl;
-}
 
 struct BigInteger : vector<int> {
 
@@ -173,14 +156,6 @@ BigInteger pow(const BigInteger &n, const BigInteger &k) {
     return pow(pow(n, k / 2), 2);
 }
 
-BigInteger pw(const BigInteger &n, int k) {
-    if (k == 0)return 1;
-    if (k == 2)return n * n;
-    if (k % 2)return n * pw(n, k - 1);
-    return pw(pw(n, k / 2), 2);
-}
-
-
 BigInteger gcd(BigInteger n, BigInteger m) {
     BigInteger rem = n % m;
     if (rem == 0)
@@ -188,62 +163,8 @@ BigInteger gcd(BigInteger n, BigInteger m) {
     else
         return gcd(m, rem);
 }
-
-map<int, int> result;
-
-int main() {
-    init();
-    ifstream cin("input.txt");
-    int n;
-    cin >> n;
-    unsigned int x, pos;
-    int answer = -1;
-    while (n--) {
-        cin >> x;
-        if (x == 0)answer = 0;
-        pos = 0;
-        while (x != 1) {
-            if (x % prime[pos] == 0) {
-                result[prime[pos]]++;
-
-                x /= prime[pos];
-            } else {
-                pos++;
-            }
-        }
-    }
-    int m;
-    cin >> m;
-    while (m--) {
-        cin >> x;
-        pos = 0;
-        while (x != 1) {
-            if (x % prime[pos] == 0) {
-                result[prime[pos]]--;
-                x /= prime[pos];
-            } else {
-                pos++;
-            }
-        }
-    }
-    if (answer == 0) {
-        cout << 0 << endl;
-    } else {
-        BigInteger up(1);
-        for (auto res:result) {
-            if (res.second > 0) {
-                BigInteger temp(res.first);
-                up *= pw(temp, res.second);
-            }
-        }
-        cout << up << endl;
-    }
-    BigInteger down(1);
-    for (auto res:result) {
-        if (res.second < 0) {
-            BigInteger temp(res.first);
-            down *= pw(temp, -res.second);
-        }
-    }
-    cout << down << endl;
+int main(){
+    BigInteger a,b;
+    cin >> a >> b;
+    cout << a - b << endl;
 }
