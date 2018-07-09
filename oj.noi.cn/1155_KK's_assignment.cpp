@@ -1,4 +1,9 @@
+//
+// Created by ubuntu on 18-7-9.
+//
+
 #include <bits/stdc++.h>
+
 using namespace std;
 const int N = 1001;
 bool f[N];
@@ -177,7 +182,8 @@ BigInteger gcd(BigInteger n, BigInteger m) {
 }
 
 int result[N];
-int main(){
+
+int main() {
     init();
     ifstream cin("input.txt");
     int n;
