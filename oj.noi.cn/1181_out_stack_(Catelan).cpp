@@ -1,3 +1,7 @@
+//
+// Created by jal on 18-7-14.
+//
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -10,6 +14,7 @@ long long C(int n, int m) {
     }
     return ret;
 }
+
 int main() {
     ifstream cin("input.txt");
     int n;
