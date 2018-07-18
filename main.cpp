@@ -1,15 +1,22 @@
+
 #include <bits/stdc++.h>
+
 using namespace std;
+typedef unsigned long long LL;
+
+LL h(int n) {
+    if (n <= 1)
+        return 1;
+    return h(n - 1) * (4 * n - 2) / (n + 1);
+}
+
+LL factorial(int n) {
+    return n <= 1 ? 1LL : factorial(n - 1) * n;
+}
 
 int main() {
-    ifstream cin("input.txt");
     int n;
     cin >> n;
-    long long a[n + 1];
-    a[1] = 1LL;
-    a[2] = 2LL;
-    for (int i = 3; i <= n; i++) {
-        a[i] = a[i - 1] + a[i - 2];
-    }
-    cout << a[n] << endl;
+    cout << h(n) * factorial(n) * factorial(n) << endl;
+    return 0;
 }
