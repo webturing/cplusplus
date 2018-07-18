@@ -16,8 +16,6 @@ int main() {
     int best = sum;
     while (left < right) {
         int mid = (left + right) >> 1;
-//        cout << "LEFT: " << left << "    RIGHT: " << right << "  MID  :    " << mid <<   endl;
-
         int s = 0;
         int t = 0;
         for (int i = 0; i < n; i++) {
@@ -31,8 +29,6 @@ int main() {
                 s += a[i];
             }
         }
-
-//        cout << "T:  " << t <<"  MID: " << mid << endl;
         if (t <= m) {
             if (t == m) {
                 best = min(best, right);
@@ -42,7 +38,5 @@ int main() {
             left = mid + 1;
         }
     }
-//    cout << left +1 << endl;
-//    cout << right << endl;
     cout << best << endl;
 }

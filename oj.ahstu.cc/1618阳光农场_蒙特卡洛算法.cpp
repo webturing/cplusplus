@@ -10,7 +10,7 @@ struct Circle {
 
     bool inside(Point pt) {
         double dis = hypot(pt.first - centre.first, pt.second - centre.second);
-        return dis < radius;
+        return dis <= radius;
     }
 };
 
