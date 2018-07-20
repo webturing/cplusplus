@@ -1,21 +1,24 @@
 #include <bits/stdc++.h>
-using namespace std;
-int n;
-int a[2001];
-int p[2001][2001];
 
-int foo(int left, int right) {
-    if (p[left][right]) return p[left][right];
-    int day = n + left - right;
-    if (left == right) return p[left][right] = day * a[left];
-    return p[left][right] = max(foo(left + 1, right) + day * a[left], foo(left, right - 1) + day * a[right]);
-}
+using namespace std;
+typedef unsigned long long LL;
+LL f[31][2][2] = {0};
 
 int main() {
-    ifstream cin("input.txt");
+    int n;
     cin >> n;
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
-    cout << foo(0, n - 1) << endl;
+    if (n < 3) {
+        cout << 0 << endl;
+        return 0;
+    }
+
+    f[3][0][0] = f[3][0][1] = f[3][1][0] = 2, f[3][1][1] = 1;
+    for (int i = 4; i <= n; i++) {
+        f[i][0][0] = f[i - 1][0][0] + f[i - 1][0][1];
+        f[i][0][1] = f[i - 1][1][1] + f[i - 1][1][0];
+        f[i][1][0] = f[i - 1][0][0] + f[i - 1][0][1];
+        f[i][1][1] = f[i - 1][1][0];
+    }
+    cout << (1LL << n) - (f[n][0][0] + f[n][0][1] + f[n][1][0] + f[n][1][1]) << endl;
     return 0;
 }
