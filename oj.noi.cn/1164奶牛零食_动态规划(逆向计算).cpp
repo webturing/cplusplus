@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 int n;
 int a[2001];
