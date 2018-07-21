@@ -1,24 +1,26 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
-typedef unsigned long long LL;
-LL f[31][2][2] = {0};
+
+
+const int MOD = 5000011;
+
+int dp[100001][2];
+
 
 int main() {
-    int n;
-    cin >> n;
-    if (n < 3) {
-        cout << 0 << endl;
-        return 0;
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int N, K;
+    cin >> N >> K;
+    dp[1][0] = 1;//0 C
+    dp[1][1] = 1;//1 B
+    for (int i = 2; i <= N; i++) {
+        dp[i][0] = (dp[i - 1][0] + dp[i - 1][1]) % MOD;
+        if (i < K + 2) {
+            dp[i][1] = 1;
+        } else dp[i][1] = (dp[i - K - 1][1] + dp[i - K - 1][0]) % MOD;
     }
-
-    f[3][0][0] = f[3][0][1] = f[3][1][0] = 2, f[3][1][1] = 1;
-    for (int i = 4; i <= n; i++) {
-        f[i][0][0] = f[i - 1][0][0] + f[i - 1][0][1];
-        f[i][0][1] = f[i - 1][1][1] + f[i - 1][1][0];
-        f[i][1][0] = f[i - 1][0][0] + f[i - 1][0][1];
-        f[i][1][1] = f[i - 1][1][0];
-    }
-    cout << (1LL << n) - (f[n][0][0] + f[n][0][1] + f[n][1][0] + f[n][1][1]) << endl;
+    cout << (dp[N][0] + dp[N][1]) % MOD << endl;
     return 0;
 }
