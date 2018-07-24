@@ -22,4 +22,5 @@ int main() {
     int n;
     cin >> n;
     cout << C(n) << endl;
+    return 0;
 }

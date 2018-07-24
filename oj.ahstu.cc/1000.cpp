@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-
+#include<bits/stdc++.h>
 using namespace std;
 const int M = 100000000;
 int k, w;

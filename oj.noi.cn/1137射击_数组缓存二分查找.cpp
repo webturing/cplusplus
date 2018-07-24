@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
         }
     v.resize(i);
     sort(v.begin(), v.end());
-    int mx = 0;
+    int mx = *v.rbegin();// fixed bugs
     for (auto e:v) {
         auto pos = lower_bound(v.begin(), v.end(), m - e);
         int cur = e + *(pos - 1);

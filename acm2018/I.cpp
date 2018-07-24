@@ -36,7 +36,6 @@ int main() {
                             int k = (y1 - y2 + 1) * (x1 - x2 + 1);
                             if (k > maxk) {
                                 maxk = k;
-                                //  cout << x2 << y2 << x1 << y1 << endl;
                             }
                         }
                     }

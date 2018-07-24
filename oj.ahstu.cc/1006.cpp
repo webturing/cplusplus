@@ -1,8 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <cctype>
-#include <sstream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 void split(const string &s, const string &delim, vector<string> &ret) {
@@ -17,21 +14,23 @@ void split(const string &s, const string &delim, vector<string> &ret) {
     ret.push_back(s.substr(last, index - last));
   }
 }
+
 bool ok(const string &s) {
-  for (string::const_iterator it = s.begin(); it != s.end(); ++it)
+  for (auto it = s.begin(); it != s.end(); ++it)
     if (!isdigit(*it)) return false;
   int m;
   istringstream iss(s);
   iss >> m;
   return m <= 255 && m >= 0;
 }
+
 bool ok(vector<string> &v) {
-  for (vector<string>::iterator it = v.begin(); it != v.end(); ++it)
+  for (auto it = v.begin(); it != v.end(); ++it)
     if (!ok(*it)) return false;
   return true;
 }
+
 int main(int argc, char const *argv[]) {
-  ifstream cin("D:\\data\\1006\\sample.in");
   for (string s; getline(cin, s);) {
     vector<string> ip;
     split(s, ".", ip);
