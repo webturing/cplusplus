@@ -7,6 +7,18 @@
 using namespace std;
 
 struct BigInteger {
+    BigInteger(int n = 0) {
+        if (n == 0) {
+            digits.push_back(0);
+            len = 1;
+            return;
+        }
+        while (n) {
+            digits.push_back(n % 10);
+            n /= 10;
+        }
+        len = digits.size();
+    }
     vector<int> digits;
     int len;
 
