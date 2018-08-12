@@ -36,10 +36,11 @@ int main() {
         int u, v, w;
         cin >> u >> v >> w;
         if (w == 0) {
-          V[u].merge(V[v]);
-        } else {
           V[v].reverse();
-          V[u].merge(V[v]);
+        }
+        while (V[v].size()) {
+          V[u].push_back(V[v].front());
+          V[v].pop_front();
         }
       }
     }
