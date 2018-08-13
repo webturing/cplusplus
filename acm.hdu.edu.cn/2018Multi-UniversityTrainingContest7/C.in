@@ -1,0 +1,26 @@
+2
+13
+push 2 10
+push 1 20
+query 21
+delete 2 30
+query 31
+push 3 40
+query 53
+pop 60
+query 62
+push 2 70
+query 41
+push 1 50
+query 91
+9
+push 2 10
+push 1 20
+query 11
+query 21
+delete 2 30
+query 31
+query 12
+pop 40
+query 41
+
