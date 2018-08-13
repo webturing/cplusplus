@@ -9,14 +9,22 @@ typedef long long LL;
 int main() {
 #ifdef LOCAL
   ifstream cin("F.in");
-  ofstream cout("F.out");
+  // ofstream cout("F.out");
   LL start = clock();
 #endif
   ios::sync_with_stdio(false);
-
-#ifdef LOCAL
-  LL end = clock();
-  cerr << 1.0 * (end - start) / CLOCKS_PER_SEC << endl;
-#endif
+  int T;
+  cin >> T;
+  while (T--) {
+    int mx, my, n;
+    cin >> mx >> my >> n;
+    LL tot = 0;
+    while (n--) {
+      int x, y;
+      cin >> x >> y;
+      tot += min(min(mx - x, x), min(y, my - y));
+    }
+    cout << tot << endl;
+  }
   return 0;
 }
