@@ -2,26 +2,27 @@
 using namespace std;
 
 int main() {
-  map<int, set<string>> mp;
-  for (int i = 1; i <= 13; i++) {
-    mp[i].insert("S");
-    mp[i].insert("H");
-    mp[i].insert("C");
-    mp[i].insert("D");
-  }
+  vector<vector<int> > cards(4, vector<int>(14, 1));
   int n;
   cin >> n;
   for (int i = 0; i < n; i++) {
     string kind;
     int digit;
     cin >> kind >> digit;
-    mp[digit].erase(kind);
+    if (kind == "S")
+      --cards[0][digit];
+    if (kind == "H")
+      --cards[1][digit];
+    if (kind == "C")
+      --cards[2][digit];
+    if (kind == "D")
+      --cards[3][digit];
   }
-  string kind[] = {"S", "H", "C", "D"};
+  string kinds("SHCD");
   for (int k = 0; k < 4; k++)
     for (int i = 1; i <= 13; i++) {
-      if (mp[i].find(kind[k]) != mp[i].end())
-        cout << kind[k] << " " << i << endl;
+      if (cards[k][i])
+        cout << kinds[k] << " " << i << endl;
     }
   return 0;
 }
