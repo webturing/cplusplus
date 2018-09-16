@@ -4,7 +4,7 @@ struct Item {
   int value;
   int weight;
   char type;
-  string date;
+  long long date;
   string name;
   bool operator<(const Item& other) const {
     if (value != other.value) return value < other.value;
