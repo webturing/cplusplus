@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  ifstream cin("in.txt");
+  // ifstream cin("in.txt");
   ios::sync_with_stdio(false);
 
   int n, k;
@@ -37,8 +37,8 @@ int main(int argc, char const *argv[]) {
     } else {
       left = middle + 1;
     }
-    cout << flag << " " << middle << " [" << left << "," << right << "]"
-         << endl;
+    // cout << flag << " " << middle << " [" << left << "," << right << "]"
+    //     << endl;
   }
   cout << p << endl;
   return 0;
