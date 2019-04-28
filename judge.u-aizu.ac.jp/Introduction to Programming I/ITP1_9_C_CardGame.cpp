@@ -7,6 +7,7 @@ inline int read_int() {
     cin >> x;
     return x;
 }
+
 int main() {
     int t;
     string a, b;
