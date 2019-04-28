@@ -1,15 +1,16 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
+void op(char &c) {
+    if (isupper(c))_tolower(c);
+    else _toupper(c);
+}
+
 int main() {
-  string line;
-  getline(cin, line);
-  for (int i = 0; i < line.length(); i++) {
-    if (isupper(line[i]))
-      cout << (char)tolower(line[i]);
-    else
-      cout << (char)toupper(line[i]);
-  }
-  cout << endl;
-  return 0;
+    string line;
+    getline(cin, line);
+    transform(line.begin(), line.end(), op);
+    cout << line << endl;
+    return 0;
 }
