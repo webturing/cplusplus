@@ -19,8 +19,13 @@ int main() {
             auto right = upper_bound(a.begin() + i + 1, a.end(), 2 * x);
             cnt += right - left;
         } else if (x < 0) {//2*abs(x)>=y>=x/2
-            auto left = lower_bound(a.begin() + i + 1, a.end(), x / 2);
-            auto right = upper_bound(a.begin() + i + 1, a.end(), 2 * -x);
+            auto left = a.begin()+i+1;
+            auto right = upper_bound(a.begin() + i + 1, a.end(), x/2);
+            cnt += right - left;
+
+
+            auto left2 = lower_bound(a.begin() + i + 1, a.end(), -x / 2);
+            auto right2 = upper_bound(a.begin() + i + 1, a.end(), 2 * -x);
             cnt += right - left;
         }
     }
