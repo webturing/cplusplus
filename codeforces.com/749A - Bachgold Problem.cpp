@@ -1,10 +1,8 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-typedef unsigned long long LL;
+typedef long long LL;
 
-template<typename T>
-inline void oo(string str, T val) { cerr << str << val << endl; }
 
 template<typename T>
 inline T read() {
