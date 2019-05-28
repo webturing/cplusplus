@@ -32,7 +32,7 @@ int main() {
 
     FOR(i, 0, 2) {
         vector<pair<int, int>> P(G.begin(), G.end());
-        sort(P.begin(), P.end(), [](pair<int, int> a, pair<int, int> b) {
+        sort(P.begin(), P.end(), [](pair<int, int> a, pair<int, int> b) -> bool {
             return a.second > b.second;
         });
         for (auto it = E.begin(); it != E.end();)
