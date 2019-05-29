@@ -1,7 +1,32 @@
-#include<bits/stdc++.h>
+#pragma comment(linker, "/stack:247474112")
+#pragma GCC optimize("Ofast")
 
+#include <bits/stdc++.h>
 using namespace std;
-typedef unsigned long long LL;
+
+#define endl '\n'
+
+typedef long long LL;
+
+//任意映射的打印方法 支持 map/multiMap vector<pair<>>等 方便调试
+template<typename T>
+void OOM(T a, string s = "") {
+    cerr << s << ":\t";
+    for (auto e:a) {
+        cerr << e.first << "," << e.second << " ";
+    }
+    cerr << endl;
+}
+
+//任意容器的打印方法 支持 vector list set multiset等 方便调试
+template<typename T>
+void OO(T a, string s = "") {
+    cerr << s << ":\t";
+    for (auto e:a) {
+        cerr << e << " ";
+    }
+    cerr << endl;
+}
 
 template<typename T>
 inline void oo(string str, T val) { cerr << str << val << endl; }
@@ -10,6 +35,7 @@ template<typename T>
 inline T read() {
     T x;
     cin >> x;
+
     return x;
 }
 
@@ -17,6 +43,10 @@ inline T read() {
 #define FORD(i, x, y) for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
 
 int main() {
+    std::iostream::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
 
     return 0;
 }
