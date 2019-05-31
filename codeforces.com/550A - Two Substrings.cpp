@@ -2,9 +2,11 @@
 #pragma GCC optimize("Ofast")
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 #define endl '\n'
+
 
 typedef long long LL;
 
@@ -42,11 +44,31 @@ inline T read() {
 #define FOR(i, x, y) for (decay<decltype(y)>::type i = (x), _##i = (y); i < _##i; ++i)
 #define FORD(i, x, y) for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
 
+
 int main() {
-    std::iostream::sync_with_stdio(false);
+    iostream::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
+    string s(read<string>());
+    vector<int> a, b;
+    FOR(i, 0, s.size() - 1) {
+        if (s.substr(i, 2) == "AB")a.push_back(i);
+        if (s.substr(i, 2) == "BA")b.push_back(i);
+    }
+    //OO(a, "a:");
+    // OO(b, "b:");
+    bool flag = false;
+    FOR(x, 0, a.size()) {
+        FOR(y, 0, b.size()) {
+            if (abs(a[x] - b[y]) >= 2) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag)break;
+    }
 
-
+    cout << (flag ? "YES" : "NO") << endl;
     return 0;
+
 }

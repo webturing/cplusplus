@@ -3,6 +3,8 @@
 using namespace std;
 typedef long long LL;
 
+template<typename T>
+inline void oo(string str, T val) { cerr << str << val << endl; }
 
 template<typename T>
 inline T read() {
@@ -14,12 +16,12 @@ inline T read() {
 #define FOR(i, x, y) for (decay<decltype(y)>::type i = (x), _##i = (y); i < _##i; ++i)
 #define FORD(i, x, y) for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
 
-int main() {
-    int n = read<int>();
-    cout << n / 2 << endl;
-    FOR(i, 1, n / 2)cout << 2 << " ";
-    if (n & 1)cout << 3 << endl;
-    else cout << 2 << endl;
 
+int main() {
+    map<int, int> M;
+    FOR(i, 0, read<int>())M[read<int>()]++;
+    int gmax = 0;
+    for (auto p:M)gmax = max(p.second, gmax);
+    cout << gmax << endl;
     return 0;
 }
