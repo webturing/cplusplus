@@ -92,27 +92,28 @@ int main(){
     ifstream cin("input.txt");
     int n, m;
     cin >> n >> m;
-    vector< vector<ZJ> > V(n+1);
+    vector< vector<ZJ> > V1(n+1), V2(n+1);//V1是反向图，V2是原图
     for(int i = 0; i < m; i++){
         int u, v, p, q;
         cin >> u >> v >> p >> q;
-        V[v].emplace_back(ZJ(u, p, q));
+        V1[v].emplace_back(ZJ(u, p, q));
+        V2[u].emplace_back(ZJ(v, p, q));
     }
     for(int i = 1; i <= n; i++){
         cerr << i <<": ";
-        for(auto j : V[i]){
+        for(auto j : V1[i]){
             cerr << j.v << " " << j.p << " " << j.q << endl;
         }
     }
     vector<int>dis_a(n+1, INT_MAX / 2), dis_hero(n+1, INT_MAX / 2);
     OO(dis_hero);
     OO(dis_a);
-    DIJ(n, n, 1, V, dis_hero, 0);
+    DIJ(n, n, 1, V1, dis_hero, 0);
     OO(dis_hero, "final dis_hero = ");
-    DIJ(n, n, 1, V, dis_a, 1);
+    DIJ(n, n, 1, V1, dis_a, 1);
     OO(dis_a, "final dis_a = ");
     vector<int>dis(n+1, INT_MAX/2);
-    for(auto i:V[1]){
+    for(auto i:V2[1]){
         dis[i.v] = (dis_hero[i.v] + i.p > dis_hero[1]) + (dis_a[i.v] + i.q > dis_a[1]);
     }
     dis[1] = 0;
@@ -128,7 +129,7 @@ int main(){
         }
         cerr << "w = " << w << endl;
         book[w] = true;
-        for(auto j : V[w]){
+        for(auto j : V2[w]){
             if(book[j.v])continue;
             int t = (dis_hero[j.v] + j.p > dis_hero[w]) + (dis_a[j.v] + j.q > dis_a[w]);
             if(dis[j.v] > dis[w] + t){
@@ -140,3 +141,31 @@ int main(){
     cout << dis[n] << endl;
     return 0;
 }
+/*
+5 7
+3 4 7 1
+1 3 2 20
+1 4 17 18
+4 5 25 3
+1 2 10 1
+3 5 4 14
+2 4 6 5
+1
+5 7
+3 4 7 11
+1 3 2 20
+1 4 7 18
+4 5 2 3
+1 2 1 10
+3 5 14 4
+2 4 6 5
+0
+4 6
+1 2 13 40
+2 3 7 12
+1 3 15 6
+1 4 11 2
+2 4 14 1
+3 4 29 14
+0
+ */
