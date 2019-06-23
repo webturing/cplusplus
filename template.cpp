@@ -4,41 +4,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define endl '\n'
+using ll=long long;
 
-typedef long long LL;
-
-//任意映射的打印方法 支持 map/multiMap vector<pair<>>等 方便调试
-template<typename T>
-void OOM(T a, string s = "") {
-    cerr << s << ":\t";
-    for (auto e:a) {
-        cerr << e.first << "," << e.second << " ";
-    }
-    cerr << endl;
-}
-
-//任意容器的打印方法 支持 vector list set multiset等 方便调试
-template<typename T>
-void OO(T a, string s = "") {
-    cerr << s << ":\t";
-    for (auto e:a) {
-        cerr << e << " ";
-    }
-    cerr << endl;
-}
-
-template<typename T>
+template<typename T=int>
 inline void oo(string str, T val) { cerr << str << val << endl; }
 
-template<typename T>
+template<typename T=int>
 inline T read() {
     T x;
     cin >> x;
-
     return x;
 }
 
+#define endl '\n'
 #define FOR(i, x, y) for (decay<decltype(y)>::type i = (x), _##i = (y); i < _##i; ++i)
 #define FORD(i, x, y) for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
 
