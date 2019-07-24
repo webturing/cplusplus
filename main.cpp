@@ -1,19 +1,64 @@
-#include<cstdio>
-#include<cctype>
-#include<cmath>
-#include<cstring>
-#include<cstdlib>
-#include<algorithm>
+#include <bits/stdc++.h>
 
-#define FOR(i, a, b) for(int i=(a);i<=(b);i++)
-#define LL long long
-#define writeln(x) printf("%d\n",x)
-#define write(x) printf("%d",x)
-#define PI acos(-1.0)
+using namespace std;
+enum {
+    TOP = 1,
+    FRONT = 2,
+    RIGHT = 3,
+    LEFT = 4,
+    BACK = 5,
+    BASE = 6
+};
+
+struct Dice {
+    int top, base, front, back, left, right;
+
+    friend istream &operator>>(istream &is, Dice &dice) {
+        is >> dice.top >> dice.front >> dice.right >> dice.left >> dice.back >>
+           dice.base;
+        return is;
+    }
+
+    void SS() {
+        int top = this->back, base = this->front, front = this->top,
+                back = this->base;
+        this->top = top, this->base = base, this->front = front, this->back = back;
+    }
+
+    void NN() {
+        int top = this->front, base = this->back, front = this->base,
+                back = this->top;
+        this->top = top, this->base = base, this->front = front, this->back = back;
+    }
+
+    void EE() {
+        int top = this->left, base = this->right, left = this->base,
+                right = this->top;
+        this->top = top, this->base = base, this->left = left, this->right = right;
+    }
+
+    void WW() {
+        int top = this->right, base = this->left, left = this->top,
+                right = this->base;
+        this->top = top, this->base = base, this->left = left, this->right = right;
+    }
+};
 
 int main() {
-    double r,h;
-    scanf("%lf%lf",&r,&h);
-    printf("Area=%.3f\n",2*PI*r*r+2*PI*r*h);
+    ifstream cin("in.txt");
+    Dice da, db;
+    cin >> da >> db;
+    int tot = 100;
+    while (da.front != db.front or da.top != db.top) {
+        int k = rand() % 4;
+        if (k == 1)da.NN();
+        if (k == 2)da.SS();
+        if (k == 3)da.EE();
+        if (k == 0)da.WW();
+        if (--tot == 0)break;
+    }
+    if (tot)cout << "Yes" << endl;
+    else cout << "No" << endl;
+
     return 0;
 }

@@ -12,7 +12,7 @@ bool cmp(Point a, Point b) {
 }
 
 int main() {
-    ifstream cin("input.txt");
+   // ifstream cin("input.txt");
     std::ios::sync_with_stdio(false);
     std::cin.tie(0);
     int m, n, k, l, d;
