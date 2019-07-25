@@ -23,7 +23,6 @@ int main() {
     for (int i = 1; i <= k; i++) {
         cout << "Case #" << i << ": ";
         __int128 A = read(), B = read(), C = read();
-
         if (A + B > C)
             cout << "true";
         else
