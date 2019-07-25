@@ -2,33 +2,28 @@
 
 using namespace std;
 
-using ll = __int128;
-
-template<typename T = int>
-inline void oo(string str, T val) {
-    cerr << str << val << endl;
+inline __int128 read() {
+    __int128 x = 0, f = 1;
+    char ch = getchar();
+    while (ch < '0' || ch > '9') {
+        if (ch == '-')
+            f = -1;
+        ch = getchar();
+    }
+    while (ch >= '0' && ch <= '9') {
+        x = x * 10 + ch - '0';
+        ch = getchar();
+    }
+    return x * f;
 }
-
-template<typename T = ll>
-inline T read() {
-    T x;
-    cin >> x;
-    return x;
-}
-
-#define endl '\n'
-#define FOR(i, x, y) \
-  for (decay<decltype(y)>::type i = (x), _##i = (y); i < _##i; ++i)
-#define FORD(i, x, y) \
-  for (decay<decltype(x)>::type i = (x), _##i = (y); i > _##i; --i)
 
 int main() {
-    std::iostream::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    FOR(i, 1, read() + 1) {
+    int k;
+    scanf("%d", &k);
+    for (int i = 1; i <= k; i++) {
         cout << "Case #" << i << ": ";
-        ll A(read<int>()), B(read()), C(read());
+        __int128 A = read(), B = read(), C = read();
+
         if (A + B > C)
             cout << "true";
         else
