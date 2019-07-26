@@ -3,23 +3,21 @@
 using namespace std;
 
 using ll=long long;
-const ll MOD = 1000000007 ;
+const ll MOD = 1000000007;
 
 int main() {
     string s;
     cin >> s;
-    transform(s.begin(),s.end(),s.begin(),::toupper);
-    vector<int> P, A, T;
+    ll p = 0, temp = 0, res = 0;
     for (int i = 0; i < s.size(); i++)
-        if (s[i] == 'P')P.emplace_back(i);
-        else if (s[i] == 'A')A.emplace_back(i);
-        else if (s[i] == 'T')T.emplace_back(i);
-    ll ans = 0;
-    for (int x = 0; x < P.size(); x++) {
-        int y = lower_bound(A.begin(), A.end(), P[x]) - A.begin();
-        int z = lower_bound(T.begin(), T.end(), T[y]) - T.begin();
-        ans = (ans + 1ll*(A.size() - y) * (T.size() - z)) % MOD;
-    }
-    cout << ans << endl;
+        if (s[i] == 'P') {
+            p++;
+        } else if (s[i] == 'A') { temp = (temp + p) % MOD; }
+        else if (s[i] == 'T') {
+            res = (res + temp) % MOD;
+        }
+
+
+    cout << res << endl;
     return 0;
 }
