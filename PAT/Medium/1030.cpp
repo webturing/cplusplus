@@ -1,18 +1,23 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-int main() {
-  ll n, p;
-  cin >> n >> p;
-  vector<ll> v(n);
-  for (auto &e : v) cin >> e;
-  sort(v.begin(), v.end());
-  ll Max = 1;
-  for (int i = 0; i < n; i++) {
-    ll e = v[i] * p;
-    ll j = upper_bound(v.begin(), v.end(), e) - v.begin();
-    Max = max(j - i, Max);
-  }
-  cout << Max << endl;
-  return 0;
+template<typename T=int>
+T read(){
+	T x;
+	cin >> x;
+	return x;
+}
+int main(){
+	int n = read(), p = read();
+	vector<int>v(n);
+	for(auto &i: v){
+		i = read();
+	}
+	sort(v.begin(), v.end());
+	int best = 0;
+	for(int i = 0; i < n; i++){
+		int m = v[i];
+		int j = upper_bound(v.begin(), v.end(), 1LL*m*p) - v.begin();
+		best = max(best, j - i);
+	}
+	cout << best << endl;
 }
