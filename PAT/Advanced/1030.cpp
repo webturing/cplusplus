@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 template<typename T = int>
 T read(){
@@ -8,63 +8,67 @@ T read(){
 }
 struct Node
 {
-	int u, d, c;
+	int d, c, u;
 	bool operator<(const Node& that)const{
-		if(d != that.d){
-			return d > that.d;
-		}
+		if(d != that.d)return d > that.d;
 		return c > that.c;
 	}
 };
 int main(){
 	int n = read(), m = read(), start = read(), destination = read();
-	vector<vector<Node>>g(n);
-	int x, y, p, q;
-	for(int i = 0; i < m; i++){
-		x = read(), y = read(), p = read(), q = read();
-		g[x].push_back({y, p, q});
-		g[y].push_back({x, p, q});
-	}
-	vector<Node>Dij(n);
+	int a[n][n], b[n][n];
 	for(int i = 0; i < n; i++){
-		Dij[i] = {INT_MAX/2, INT_MAX/2, i};
+		for(int j = 0; j < n; j++){
+			if(i != j){
+				a[i][j] = b[i][j] = INT_MAX/2;
+			}else{
+				a[i][j] = b[i][j] = 0;
+			}
+		}
 	}
-	Dij[start] = {0, 0, start};
-	vector<int>book(n), F(n, -1);
+	for(int i = 0; i < m; i++){
+		int x = read(), y = read(), d = read(), c = read();
+		a[x][y] = min(a[x][y], d);
+		a[y][x] = min(a[y][x], d);
+		b[x][y] = min(b[x][y], c);
+		b[y][x] = min(b[y][x], c);
+	}
 	priority_queue<Node>Q;
-	for(auto i: g[start]){
-		Dij[i.u] = i;
-		Q.push(Dij[i.u]);
-		F[i.u] = start;
+	vector<int>dis(n), cos(n), book(n), f(n, -1);
+	for(int i = 0; i < n; i++){
+		dis[i] = a[start][i];
+		cos[i] = b[start][i];
+		Q.push({dis[i], cos[i], i});
+		f[i] = start;
 	}
-	Q.push(Dij[start]);
 	while(Q.size()){
 		Node head = Q.top();
 		Q.pop();
 		if(book[head.u])continue;
 		book[head.u] = 1;
-		for(auto node: g[head.u]){
-			if(Dij[node.u].d > Dij[head.u].d + node.d){
-				Dij[node.u].d = Dij[head.u].d + node.d;
-				Dij[node.u].c = Dij[head.u].c + node.c;
-				F[node.u] = head.u;
-				Q.push(Dij[node.u]);
-			}else if(Dij[node.u].d == Dij[head.u].d + node.d and Dij[node.u].c > Dij[head.u].c + node.c){
-				Dij[node.u].c = Dij[head.u].c + node.c;
-				F[node.u] = head.u;
-				Q.push(Dij[node.u]);
+		for(int i = 0; i < n; i++){
+			if(dis[i] > dis[head.u] + a[head.u][i]){
+				dis[i] = dis[head.u] + a[head.u][i];
+				cos[i] = cos[head.u] + b[head.u][i];
+				f[i] = head.u;
+				Q.push({dis[i], cos[i], i});
+			}else if(dis[i] == dis[head.u] + a[head.u][i] and cos[i] > cos[head.u] + b[head.u][i]){
+				cos[i] = cos[head.u] + b[head.u][i];
+				f[i] = head.u;
+				Q.push({dis[i], cos[i], i});
 			}
 		}
 	}
-	int d1 = destination;
 	vector<int>path;
-	path.push_back(d1);
-	while(~F[d1]){
-		d1 = F[d1];
-		path.push_back(d1);
+	int d = destination;
+	while(d != start){
+		path.push_back(d);
+		d = f[d];
 	}
-	for(auto i = path.rbegin(); i < path.rend(); i++){
-		cout << *i << ' ';
+	path.push_back(start);
+	reverse(path.begin(), path.end());
+	for(auto i: path){
+		cout << i << ' ';
 	}
-	cout << Dij[destination].d << " " << Dij[destination].c << endl;
+	cout << dis[destination] << ' ' << cos[destination] << endl;
 }
