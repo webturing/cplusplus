@@ -1,2 +1,2 @@
 set(CMAKE_CXX_STANDARD 11)
-add_executable(cplusplus2 codeforces.com/C1141F.cpp)
+add_executable(cplusplus test.cpp)
