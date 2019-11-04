@@ -4,7 +4,7 @@ using namespace std;
 const double EPS = 1e-8;
 
 inline bool equals(double x, double y) {
-    return fabs(x - y) <= EPS;‘’‘’‘’‘’‘’‘’
+    return fabs(x - y) <= EPS;
 }
 
 class Point {//Point类，点
