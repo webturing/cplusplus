@@ -1,75 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="Project" targetName="cplusplus" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8" />
+      <configuration CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bbbc13b-f249-41e9-a98c-6b95d0741347" name="Default Changelist" comment="先反向建图，使用Dijkstra算法那求出hero_dis和amap_dis,然后再用Dijkstra算法求最短路。这个最短路的判断是">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/template.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+    <list default="true" id="6bbbc13b-f249-41e9-a98c-6b95d0741347" name="Default Changelist" comment="计算几何：投影Projection 反射 Reflection">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acm.nyist.net/testCPUALL.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/p20/P01.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/p20/P02.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/p20/P03.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/p20/P04.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/p20/P06.cpp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/ATicket.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/ATicket.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/BGcd.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/BGcd.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/CFunction.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/CFunction.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/DTree.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/DTree.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/ECheckout.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/ECheckout.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/FString.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/FString.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/GString.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/GString.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/HClock.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/HClock.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/IUnion.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/IUnion.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/JTangram.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/JTangram.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/2019CCPCwfinal/KTetris.cpp" afterPath="$PROJECT_DIR$/CCPC/2019CCPCwfinal/KTetris.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/A.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/A.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/B.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/B.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/C.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/C.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/D.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/D.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/E.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/E.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/G.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/G.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/H.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/H.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/I.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/I.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2016hefei/J.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2016hefei/J.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2018/1000.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2018/1000.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2018/1004.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2018/1004.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2018/1010.cpp" afterPath="$PROJECT_DIR$/CCPC/CCPC2018/1010.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CCPC2018/1010.txt" afterPath="$PROJECT_DIR$/CCPC/CCPC2018/1010.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pat2019/1001.cpp" afterPath="$PROJECT_DIR$/PAT/Other/1001.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pat2019/1001b.cpp" afterPath="$PROJECT_DIR$/PAT/Other/1001b.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pat2019/1002.cpp" afterPath="$PROJECT_DIR$/PAT/Other/1002.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pat2019/sstreamDemo.cpp" afterPath="$PROJECT_DIR$/PAT/Other/sstreamDemo.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="168">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="sstreamDemo.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/sstreamDemo.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#54#72#0" expanded="true" />
-                <element signature="e#46#121#0" />
-                <element signature="e#131#149#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.cpp">
+      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acm.nyist.net/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/out.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="output.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acm.nyist.net/output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt">
+      <file leaf-file-name="1000.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/acm.nyist.net/1000.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="P1200.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usaco/P1200.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="P1201.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usaco/P1201.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="P1204brute.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usaco/P1204brute.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usaco/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -93,46 +183,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codeforces.com/496A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/1155D.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/114A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/344A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/61A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/318A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/617A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/500A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/268A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/510A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/443A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/228A.cpp" />
-        <option value="$PROJECT_DIR$/codeforces.com/template.cpp" />
-        <option value="$PROJECT_DIR$/AHCPC2019/D.cpp" />
-        <option value="$PROJECT_DIR$/AHCPC2019/A_机器人足球.cpp" />
-        <option value="$PROJECT_DIR$/2019CCPCwfinal/A.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data13.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data14.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data15.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data16.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data17.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data18.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data19.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data20.in" />
-        <option value="$PROJECT_DIR$/2019CCPCwfinal/B.cpp" />
-        <option value="$PROJECT_DIR$/makeData.cpp" />
-        <option value="$PROJECT_DIR$/2019CCPCwfinal/K.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data1.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data2.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data3.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data4.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data5.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data6.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data7.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data8.in" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/data9.in" />
         <option value="$PROJECT_DIR$/cmake-build-debug/data10.in" />
         <option value="$PROJECT_DIR$/makeOutputData.cpp" />
         <option value="$PROJECT_DIR$/a.c" />
-        <option value="$PROJECT_DIR$/template.cpp" />
         <option value="$PROJECT_DIR$/PAT/Advanced/1003.cpp" />
         <option value="$PROJECT_DIR$/PAT/Advanced/1004.cpp" />
         <option value="$PROJECT_DIR$/tramsform的使用.cpp" />
@@ -140,42 +193,140 @@
         <option value="$PROJECT_DIR$/PAT/Medium/1005.cpp" />
         <option value="$PROJECT_DIR$/PAT/Advanced/1013.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/input.txt" />
         <option value="$PROJECT_DIR$/PAT/Advanced/1019.cpp" />
+        <option value="$PROJECT_DIR$/books.aHaAlgorithm/Dijkstra算法_单源最短路.cpp" />
+        <option value="$PROJECT_DIR$/books.aHaAlgorithm/n的全排列.cpp" />
+        <option value="$PROJECT_DIR$/template.cpp" />
+        <option value="$PROJECT_DIR$/PAT/Advanced/Contest2019/A.cpp" />
+        <option value="$PROJECT_DIR$/PAT/Advanced/Contest2019/B.cpp" />
+        <option value="$PROJECT_DIR$/PAT/Advanced/Contest2019/C.cpp" />
+        <option value="$PROJECT_DIR$/PAT/Advanced/Contest2019/D.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/A.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/C.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/B.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/D.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/E.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/F.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/H.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/I.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/L.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/W.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/X.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/G.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/J.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/K.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/M.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/N.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/P.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/Q.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/R.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/S.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/T.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/U.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/V.cpp" />
+        <option value="$PROJECT_DIR$/Contest1388/O.cpp" />
+        <option value="$PROJECT_DIR$/judge.u-aizu.ac.jp/Number Theory/NTL_2_A_AdditionOfBigIntegers.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/judge.u-aizu.ac.jp/Data Sets and Queries/DSL_1_A_DisjointSet.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/input.txt" />
         <option value="$PROJECT_DIR$/test.cpp" />
+        <option value="$PROJECT_DIR$/CCPC2016hefei/A.cpp" />
+        <option value="$PROJECT_DIR$/judge.u-aizu.ac.jp/Computer Geometry/CGL_1_A_Projection.cpp" />
+        <option value="$PROJECT_DIR$/stl/rmq.cpp" />
+        <option value="$PROJECT_DIR$/util/testCPU.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="572" />
     <option name="y" value="25" />
-    <option name="width" value="867" />
-    <option name="height" value="877" />
+    <option name="width" value="434" />
+    <option name="height" value="439" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="cplusplus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cplusplus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="judge.u-aizu.ac.jp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
               <item name="PAT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cplusplus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
               <item name="PAT" type="462c0819:PsiDirectoryNode" />
-              <item name="Advanced" type="462c0819:PsiDirectoryNode" />
+              <item name="Other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="tlxxx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="tlxxx" type="462c0819:PsiDirectoryNode" />
+              <item name="lec03-array2d" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="usaco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="www.luogu.org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusplus" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="cplusplus" type="462c0819:PsiDirectoryNode" />
+              <item name="www.luogu.org" type="462c0819:PsiDirectoryNode" />
+              <item name="NOIP2000" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,8 +337,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Contest1388" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\cplusplus\CCPC" />
+      <recent name="D:\project\cplusplus\PAT\Other" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PAT/Advanced" />
       <recent name="$PROJECT_DIR$/cmake-build-debug" />
@@ -208,12 +364,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="cplusplus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cplusplus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cplusplus">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Application.cplusplus">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
     </configuration>
+    <configuration name="cplusplus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cplusplus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cplusplus">
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.cplusplus" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -236,6 +400,23 @@
       <workItem from="1564298066169" duration="14072000" />
       <workItem from="1564364683690" duration="42312000" />
       <workItem from="1565394093213" duration="4212000" />
+      <workItem from="1568029434778" duration="5553000" />
+      <workItem from="1568118244078" duration="254000" />
+      <workItem from="1568202182363" duration="3757000" />
+      <workItem from="1568268271492" duration="300000" />
+      <workItem from="1568685449797" duration="761000" />
+      <workItem from="1569987849907" duration="365000" />
+      <workItem from="1570252174190" duration="2898000" />
+      <workItem from="1570264302035" duration="714000" />
+      <workItem from="1570289999839" duration="3117000" />
+      <workItem from="1570375672631" duration="1085000" />
+      <workItem from="1570458133758" duration="655000" />
+      <workItem from="1571104673986" duration="987000" />
+      <workItem from="1571418226004" duration="415000" />
+      <workItem from="1571487489523" duration="1217000" />
+      <workItem from="1572274401282" duration="608000" />
+      <workItem from="1572354466427" duration="768000" />
+      <workItem from="1572832660412" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="如果m%n不等于0，则无解。&#10;如果n&gt;m,则无解。&#10;那么n到达m需要乘的步长为p = m / n，这个如果这个p能被2 3全部整除，则说明有解，否则无解。">
       <created>1558442048764</created>
@@ -437,7 +618,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261297000" />
+    <option name="totallyTimeSpent" value="285385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,29 +630,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="572" y="25" width="867" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25454545" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970588" weight="0.26496816" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49950933" weight="0.3299363" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4955839" weight="0.44840765" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49852797" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5044161" side_tool="true" weight="0.32866243" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32866243" />
-      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49950933" weight="0.3299363" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26744187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07034632" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29601723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4714747" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,6 +662,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="LONG_EDGES_VISIBLE" value="true" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -502,23 +682,11 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="排序去重" />
     <MESSAGE value="水题练习" />
     <MESSAGE value="先求数组v的前缀和sum数组，sum[n-1]就是v数组的全部项的累加和。设MIN为sum数组的最小值。&#10;如果sum[n-1]大于0且h+MIN大于0，则一定无解。因为此时h只会增加不会减少&#10;如果h+MIN小于0，则经过整场数组的轮数cnt为0，否则为cnt=ceil(1.0∗(h+MIN)/(−sum[n−1])) cnt=ceil(1.0*(h+MIN) / (-sum[n-1]))cnt=ceil(1.0∗(h+MIN)/(−sum[n−1])).剩下的h=h+sum[n−1]∗cnt h =h+ sum[n-1]*cnt，h=h+sum[n−1]∗cnt，前面的cnt轮走过的步数为cnt∗n cnt * ncnt∗n。剩下的步数一定可以在一轮数组遍历中使得h降到0以下，所以遍历sum数组，找到h+sum[i]&amp;lt;=0 h + sum[i] &amp;lt;= 0h+sum[i]&lt;=0即可。" />
     <MESSAGE value="每个小写字母和问号都关联一个链表，初始时将每次字母和问号所在的下标存到对应字符的链表里。然后先匹配小写字母，小写字母无法与小写字母匹配，就与问号匹配，最后剩下问号就与问号匹配。" />
@@ -543,129 +711,25 @@
     <MESSAGE value="数据结构模拟。如果某个人在17:00之前被服务，那么会等到这个人被服务完才下班" />
     <MESSAGE value="在指定进制下逆反的素数判断" />
     <MESSAGE value="回文进制" />
-    <option name="LAST_COMMIT_MESSAGE" value="回文进制" />
+    <MESSAGE value="计算几何：投影Projection 反射 Reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="计算几何：投影Projection 反射 Reflection" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data3.out" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data2.out" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data1.out" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data1.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data2.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data11.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data10.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data9.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data8.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data7.out" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data7.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data6.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data5.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data4.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/data3.in" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/kernal.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/kernal_out.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-end-line="2229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2019CCPCwfinal/K.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1005.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1001.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1002.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1004.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1007.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1004.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1003.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1040c.cpp" />
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1006.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/1005.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="20" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Medium/1005.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <element signature="e#94#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1008.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1007.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1009.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-384">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -679,21 +743,21 @@
     <entry file="file://$PROJECT_DIR$/tramsform的使用.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1011.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1012.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -701,27 +765,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="e#94#112#0" expanded="true" />
-            <element signature="e#171#189#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1014.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/test.cpp" />
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1015.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -729,13 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PAT/Advanced/1016(WA).cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/makeData.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -749,31 +800,9 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#54#72#0" expanded="true" />
-            <element signature="e#46#121#0" />
-            <element signature="e#131#149#0" expanded="true" />
-          </folding>
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/out.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PAT/Advanced/1019.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -782,10 +811,329 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CCPC/CCPC2016hefei/A.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccf认证/ISBN.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/judge.u-aizu.ac.jp/Number Theory/NTL_2_A_AdditionOfBigIntegers.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acm.nyist.net/06STL练习/0095.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/judge.u-aizu.ac.jp/Computer Geometry/CGL_1_B_Reflection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books.aHaAlgorithm/1581.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/2-数学.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1281">
+            <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/judge.u-aizu.ac.jp/Data Sets and Queries/DSL_1_A_DisjointSet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books.aHaAlgorithm/dfs_迷宫.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/1-数据结构.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019CCPCwfinal/C.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1614宽搜_勉强AC版本.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1615买不到的数字.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1617.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1617兰顿蚂蚁_模拟.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1618阳光农场_蒙特卡洛算法.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oj.ahstu.cc/1750.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/stl2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/rmq.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+          <folding>
+            <marker date="1563792718874" expanded="true" signature="1471:2613" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/multiset.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/math/本原立方勾股数.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/cxx11.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/stl2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/testCPU.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1563792718910" expanded="true" signature="153:231" ph="{...}" />
+            <marker date="1563792718910" expanded="true" signature="154:231" ph="/**...*/" />
+            <marker date="1563792718910" expanded="true" signature="1906:1918" ph="/**...*/" />
+            <marker date="1563792718910" expanded="true" signature="1906:2291" ph="{...}" />
+            <marker date="1563792718910" expanded="true" signature="2405:2527" ph="{...}" />
+            <marker date="1563792718910" expanded="true" signature="2542:3142" ph="{...}" />
+            <marker date="1563792718910" expanded="true" signature="2543:2628" ph="/**...*/" />
+            <marker date="1563792718910" expanded="true" signature="3195:3805" ph="{...}" />
+            <marker date="1563792718910" expanded="true" signature="3196:3286" ph="/**...*/" />
+            <marker date="1563792718910" expanded="true" signature="3818:4545" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usaco/2867.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usaco/P1200.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usaco/P1201.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usaco/P1204brute.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usaco/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="168">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/sstreamDemo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acm.nyist.net/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acm.nyist.net/testCPUALL.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acm.nyist.net/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acm.nyist.net/1000.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
