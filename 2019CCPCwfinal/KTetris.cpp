@@ -3,19 +3,21 @@
 //
 
 #include<bits/stdc++.h>
+
 using namespace std;
-int main(){
+
+int main() {
     int n, m;
     cin >> n >> m;
-    if(n % 4 != 0 or m % 4 != 0){
+    if (n % 4 != 0 or m % 4 != 0) {
         cout << "no response" << endl;
-    }else{
-        vector<string>v = {"1113", "2133", "2243", "2444"};
+    } else {
+        vector <string> v = {"1113", "2133", "2243", "2444"};
         n /= 4;
         m /= 4;
-        for(int i = 1; i <= n; i++){
-            for(int k = 0; k < v.size(); k++){
-                for(int j = 1; j <= m; j++){
+        for (int i = 1; i <= n; i++) {
+            for (int k = 0; k < v.size(); k++) {
+                for (int j = 1; j <= m; j++) {
                     cout << v[k];
                 }
                 cout << endl;
