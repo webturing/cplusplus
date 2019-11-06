@@ -1,1 +1,0 @@
-/usr/local/bin/g++-8  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  "CMakeFiles/cplusplu.dir/codeforces.com/1141/C_O(n).cpp.o" CMakeFiles/cplusplu.dir/codeforces.com/1141/D.cpp.o  -o cplusplu 

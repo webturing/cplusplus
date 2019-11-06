@@ -1,4 +1,24 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 -G "CodeBlocks - Unix Makefiles" /Users/mac/CLionProjects/cplusplus
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/mac/CLionProjects/cplusplus/cmake-build-debug
+/home/tlwl/dev/clion-2019.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 -G "CodeBlocks - Unix Makefiles" /home/tlwl/CLionProjects/cplusplus
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is unknown
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Error in CMakeLists.txt:
+  The CMAKE_CXX_COMPILER:
+
+    /usr/local/bin/g++-8
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+  to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/tlwl/CLionProjects/cplusplus/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/tlwl/CLionProjects/cplusplus/cmake-build-debug/CMakeFiles/CMakeError.log".

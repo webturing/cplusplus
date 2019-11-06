@@ -3,24 +3,14 @@
 using namespace std;
 
 int main() {
-    freopen("input.txt", "r", stdin);
     int n;
     cin >> n;
-    int a[n][n];
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            cin >> a[i][j];
-        }
+    vector<int>v;// 向量
+    while(n){
+        v.push_back(n % 10);
+        n /= 10;
     }
-    int s = 0;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (i == j || i + j == n - 1) {
-                s += a[i][j];
-            }
-        }
-    }
-    cout << s << endl;
+    cout << v.size() << endl;// 长度
     return 0;
 
 }
