@@ -1,2 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(cplusplus)
+
 set(CMAKE_CXX_STANDARD 11)
-add_executable(cplusplus test.cpp)
+
+set(SOURCE_FILES main.cpp)
+add_executable(cplusplus ${SOURCE_FILES})
